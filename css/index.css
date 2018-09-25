@@ -1,0 +1,332 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  /* margin-top: 70px; */
+}
+
+/* Titles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+/* Paragraph & Typographic */
+
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Links */
+
+a {
+  color: #f85c37;
+  word-wrap: break-word;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover, a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before, a:after {
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.navbar {
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-inverse {
+  background: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  background: #ff7878
+}
+
+.navbar-inverse .navbar-brand {
+  color: #999999;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.navbar-inverse .navbar-brand i {
+  color: #ff7878;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/*TILT*/
+
+.tilt {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+.header-bg {
+  background: url(../img/mountain-background.jpg) no-repeat center top;
+  background-position-y: -50px;
+}
+
+#about-me {
+  /* background: url(../img/mountain-background.jpg) no-repeat center top; */
+  padding-top: 100px;
+  text-align: center;
+  /* background-attachment: relative; */
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#headerwrap h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 70px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+#headerwrap h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px ) {
+  #headerwrap h1 {
+    font-size: 50px;
+  }
+
+  #headerwrap h2 {
+    font-size: 30px;
+  }
+
+  .greeting-card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: bold;
+  }
+}
+
+/* Dark Grey Wrap */
+
+#work {
+  background: #e0e0e0;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+#dg h4 {
+  font-weight: 700;
+}
+
+/* Footer Wrap */
+#contacts {
+  background-color: #333;
+}
+/****** SECTIONS *****/
+
+.w {
+  padding-top: 35px;
+}
+
+.w h4 {
+  font-weight: 700;
+}
+
+.w i {
+  color: #ff7878;
+  font-size: 30px;
+}
+
+.wb {
+  padding-top: 35px;
+  margin-bottom: 0px;
+}
+
+.wb h4 {
+  font-weight: 700;
+}
+
+.desc {
+  padding-top: 35px;
+}
+
+.desc h4 {
+  font-weight: 700;
+}
+
+.desc i {
+  color: #ff7878;
+  font-size: 12px;
+  padding: 5px;
+}
+
+/* Copyrights */
+
+#copyrights {
+  background: #222222;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+#copyrights p {
+  margin-bottom: 5px;
+}
+
+.credits {
+  color: #999;
+}
+
+.img {
+  border: 2px solid #ff7878;
+  border-radius: 4px;
+}
+
+.avatar-navbar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.avatar {
+  border-radius: 10%;
+}
+
+#portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.greeting-card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 20%;
+}
+
+/* .social-anchor {
+  font-size: 50px;
+  color: #7b7b7b;
+} */
+
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  color: #ACACAC;
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/*
+ Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+  color: #3B5998;
+}
+
+#social-github:hover {
+  color: #000000;
+}
+
+#social-inst:hover {
+  color: #d6249f;
+}
+
+#social-vk:hover {
+  color: #4c75a3;
+}
+
+#social-tg:hover {
+  color: #0088CC;
+}
+
+#social-whatsapp:hover {
+  color: #25d366;
+}
+
+#social-em:hover {
+  color: #CE0000;
+}
+
+.work-logo {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  width: 100px;
+}
+
+.urbica-logo {
+  opacity: 50%;
+}
+
+p.work-experience {
+  margin-bottom: 0;
+}

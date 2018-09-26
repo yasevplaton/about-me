@@ -6,6 +6,7 @@ body {
   color: #555;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+  position: relative;
   /* margin-top: 70px; */
 }
 
@@ -58,8 +59,8 @@ hr {
 .navbar {
   font-weight: 800;
   font-size: 14px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .navbar-inverse {
@@ -144,7 +145,7 @@ hr {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 500px ) {
   #headerwrap h1 {
     font-size: 50px;
   }
@@ -153,13 +154,10 @@ hr {
     font-size: 30px;
   }
 
-  .greeting-card {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    font-weight: bold;
+  .avatar {
+    width: 0px;
   }
+
 }
 
 /* Dark Grey Wrap */
@@ -247,6 +245,8 @@ hr {
 
 .avatar {
   border-radius: 10%;
+  width: 300px;
+  align-self: center;
 }
 
 #portfolio {
@@ -260,14 +260,14 @@ hr {
   text-align: center;
   flex-direction: column;
   font-weight: bold;
-  background: #fff;
+  background: rgba(255,255,255, 0.9);
   border-radius: 20%;
 }
 
-/* .social-anchor {
+.social-anchor {
   font-size: 50px;
   color: #7b7b7b;
-} */
+}
 
 .social:hover {
   -webkit-transform: scale(1.1);
@@ -329,4 +329,8 @@ hr {
 
 p.work-experience {
   margin-bottom: 0;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
 }
